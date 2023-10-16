@@ -11,6 +11,7 @@ class GetRequestPhotosTest(APITestCase):
 
     def setUp(self):
 
+
         self.photo1 = Photo.objects.create(
             title='title1', albumId=1, width=150, height=150, color='c2ca9d', url=f'photos/c2ca9d.png')
 

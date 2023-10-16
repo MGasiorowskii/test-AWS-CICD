@@ -1,0 +1,12 @@
+name: CI
+on: [push]
+jobs:
+  Commit-Checker:
+    runs-on: ubuntu-latest
+    name: commit-message-validation
+    steps:
+      - uses: actions/checkout@v3
+      - id: foo
+        uses: uptownaravi/verify-commit-message-action@v2
+        with:
+          regex: '^[FEAT | FIX]-?.{10}.+'

@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     name: commit-message-validation
     steps:
-      - run: scripts/check-commit-msg.sh
+      - run: bash ${GITHUB_WORKSPACE}/scripts/check-commit-msg.sh
